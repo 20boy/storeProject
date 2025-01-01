@@ -1,0 +1,234 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+@font-face {
+  font-family: "Acme";
+  src: url("./assets/Acme-Regular.ttf");
+}
+@font-face {
+  font-family: "Ubuntu";
+  src: url("./assets/Ubuntu-Regular.ttf");
+}
+:root {
+  --primary: rgb(9, 89, 81);
+  --bacgrounds: rgb(241, 156, 53);
+  --lightbacgrounds: rgb(226, 190, 145);
+}
+body {
+  font-family: "Acme";
+  background-color: var(--primary);
+  overflow-x: hidden;
+}
+body::-webkit-scrollbar {
+  width: 10px;
+  background-color: rgb(85, 103, 103);
+  border-radius: 2px;
+  cursor: all-scroll;
+}
+body::-webkit-scrollbar-thumb {
+  background-color: var(--lightbacgrounds);
+  border-radius: 2px;
+}
+
+.hero {
+  height: 100vh;
+  width: 100vw;
+  color: white;
+  letter-spacing: 1px;
+  line-height: 22px;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--primary);
+  margin: 10px 20px 10px 5px;
+  align-items: center;
+}
+.navtitle {
+  font-size: 20px;
+  margin-left: 10px;
+  border-bottom: 3px solid var(--bacgrounds);
+  transition: all ease-in-out 0.5s;
+}
+.navtitle:hover {
+  color: var(--lightbacgrounds);
+}
+.navlinks {
+  display: flex;
+  gap: 16px;
+}
+.navlinks li {
+  list-style-type: none;
+}
+.navlinks li a {
+  font-size: 16px;
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+  border-radius: 5px;
+  padding: 3px;
+}
+.navlinks li a.active {
+  font-size: 20px;
+  background-color: var(--bacgrounds);
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+.home {
+  padding: 10px;
+}
+.home h1 {
+  text-align: center;
+}
+.hometext {
+  margin-top: 10px;
+  font: 1.5rem Ubuntu;
+  line-height: 35px;
+}
+.addButton {
+  padding: 3px;
+  background-color: greenyellow;
+  border: none;
+  height: 30px;
+  cursor: pointer;
+  margin-top: 30px;
+  transition: all 0.5s;
+}
+.addButton:hover {
+  background-color: var(--bacgrounds);
+}
+.addButton a {
+  text-decoration: none;
+  font-weight: 600;
+  color: black;
+}
+.booksCon {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+  align-items: center;
+  justify-content: center;
+}
+.BooksPage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+.BokCon {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  flex: 1;
+  align-items: center;
+  justify-content: center;
+}
+.bookImg {
+  width: 310px;
+  height: 400px;
+  background-color: var(--bacgrounds);
+  margin-bottom: 20px;
+}
+.ButtonCon {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.deleteButton {
+  background-color: red;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.updateButton {
+  background-color: rgb(173, 249, 60);
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.updateButton a {
+  text-decoration: none;
+  color: rgb(135, 126, 126);
+  font-weight: 700;
+}
+
+.ButtonCon button {
+  width: 100px;
+  padding: 5px;
+}
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+.form input {
+  width: 250px;
+  height: 30px;
+  padding: 5px;
+}
+.form input::placeholder {
+  font-weight: 700;
+  font-size: 20px;
+}
+.form h1 {
+  color: black;
+}
+
+.form button {
+  background-color: var(--bacgrounds);
+  color: white;
+  padding: 10px 10px;
+  width: 150px;
+  cursor: pointer;
+  border: none;
+}
+
+.formCon {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  width: 100%;
+  height: 100%;
+}
+
+.fileOne {
+  opacity: 0;
+}
+.fCover {
+  height: 40px;
+  width: 150px;
+  background-color: var(--lightbacgrounds);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+}
+.fCover:hover {
+  font-size: 35px;
+  color: black;
+}
+
+@media screen and(min-width: 450px) {
+  .navtitle {
+    display: none;
+  }
+  .navlinks {
+    display: flex;
+  }
+  .navlinks li a {
+    font-size: 13px;
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+    border-radius: 5px;
+    padding: 3px;
+  }
+}
