@@ -1,6 +1,6 @@
 # Bookstore Website
 
-This repository contains the source code for a full-stack bookstore website built with [**Your Frontend Framework**] (e.g., React, Vue.js, Angular) for the frontend and [**Your Backend Framework**] (e.g., Node.js with Express, Python with Django/Flask) for the backend.
+This repository contains the source code for a full-stack bookstore website built with React.js for the frontend and NodeJS with Express for the backend.
 
 **Features:**
 
@@ -10,18 +10,6 @@ This repository contains the source code for a full-stack bookstore website buil
         * **Read:** View a list of books, search for books by title, author, or category.
         * **Update:** Edit book information (title, author, price, etc.).
         * **Delete:** Remove books from the inventory.
-* **Shopping Cart:**
-    * Add books to the cart.
-    * View and modify items in the cart.
-    * Calculate the total price.
-    * Apply discounts or coupons (if applicable).
-* **Order Processing:**
-    * Checkout process with secure payment gateway integration (optional).
-    * Order confirmation and order history.
-* **Admin Panel:** 
-    * Dashboard with key metrics (e.g., sales, orders, inventory).
-    * Manage users, orders, and inventory.
-    * Generate reports and analytics.
 * **Search and Filtering:** 
     * Search for books by title, author, ISBN, or keywords.
     * Filter books by category, price range, and other criteria.
